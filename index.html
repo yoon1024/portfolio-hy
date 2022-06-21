@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/31e84a9307.js" crossorigin="anonymous"></script>
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <header id="header">
+        <video src="img/beach.mp4" autoplay loop muted></video>
+        <!-- 색감 수정 or 다른 영상으로 대체 예정,
+            주제를 호텔 or 스파 or 코스메틱 중 어떤 걸로 할지 제대로 정하지를 못해서 사진들 콘셉트가 좀 뒤죽박죽입니다 ㅜ-->
+        
+        <div class="inner">
+            <a href="#"><img src="img/logo.png" alt="이솝 로고"></a>
+        </div>
+
+        <nav class="menuWeb">
+            <!-- 아래에 밑줄 그이는 hover 효과 -->
+            <ul id="gnb">
+                <li><a href="#">PRODUCT</a></li>
+                <!-- 제품 소개 -->
+                <li><a href="#">BRAND STORY</a></li>
+                <!-- 회사 소개, 브랜드 스토리, 함께하는 사람들(ex.조직도) -->
+                <li><a href="#">SERVICE</a></li>
+                <!-- 고객센터 or q&a -->
+                <li><a href="#">EVENT</a></li>
+                <!-- 유튜브, 이벤트 등등 -->
+                <li><a href="#">STORE</a></li>
+                <!-- 지역별 스토어 위치 -->
+            </ul>
+
+            <div class="util">
+                <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+                    <!-- 검색 창 -->
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <!-- 장바구니 -->
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <!-- 로그인 화면 -->
+            </div>
+        </nav>
+
+        <div class="copy">
+            <h1>Do not wish to be anything but what you are, and try to be that perfectly</h1>
+            <!-- 대표 카피 -->
+            <p><em>-Saint Francis de Sales-</em></p>
+        </div>
+    </header>
+
+
+    <section id="intro">
+        <!-- 텍스트랑 이미지랑 배치하는 것만 생각해서 이것저것 마구잡이로 집어넣고 배열만 맞추다 보니 html을 너무 뒤죽박죽 짰어요 죄송해요 ㅜㅜ 
+        
+        배열을
+        세로|세로가 아니라 텍스트랑 사진을
+
+        가로
+        ---
+        가로
+        ---
+        가로
+        이런 식으로 배치했어야 됐을 것 같은데 일단 수정하겠습니다 ㅜㅜ-->
+        <div class="inner_1">
+            <h2>Aesop</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, numquam?</h3>
+            <div class="wrap1">
+                <img src="img/intro_visual.jpg" alt="상품이 진열된 사진">
+            </div>
+            <h2>THE STYLE</h2>
+        </div>
+        <div class="inner_2">
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consequuntur accusamus nam sint veritatis eos suscipit enim, ut quaerat. Explicabo nulla officia quos praesentium, mollitia provident accusantium laudantium aut nemo.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum obcaecati cupiditate maxime eius, laborum cum quam modi error accusamus expedita.</p>
+            </article>
+            <div class="wrap2">
+                <img src="img/intro_visual2.jpg" alt="일러스트">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit, aliquam non reprehenderit, quasi dolorum quibusdam delectus rerum, voluptatem deleniti quam perspiciatis debitis enim rem laudantium minus hic laboriosam saepe!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, facilis optio? Quia vitae modi iure.</p>
+        </div>
+    </section>
+
+
+    <section id="product">
+        <article>
+            <p>Lorem, ipsum dolor.</p>
+            <h2>Aesop Product</h2>
+            <p>#lorem #lorem</p>
+        </article>
+        <!-- 이미지에 커서를 올리면 검은 배경에 view more 뜨도록 hover 효과 주기 -->
+        <div class="wrap">
+            <article>
+                <img src="img/product1.png" alt="Hand Balm">
+                <h3>Hand Balm</h3>
+                <p>$30.99</p>
+            </article>
+            <article>
+                <img src="img/product2.png" alt="Hwyl Eau de Parfum">
+                <h3>Hwyl Eau de Parfum</h3>
+                <p>$144.99</p>
+            </article>
+            <article>
+                <img src="img/product3.png" alt="Geranium Leaf Body Scrub">
+                <h3>Geranium Leaf Body Scrub</h3>
+                <p>$42.99</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="slide">
+        <!-- 슬라이드 효과 주기 
+            일단은 배치만 해 두었는데 조금 더 공부해서 구현해 오겠습니다 ㅜㅜ -->
+        <article>
+            <p>Lorem, ipsum dolor.</p>
+            <h2>Brand Story</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Rem, assumenda! Doloremque modi similique velit officia?</p>
+        </article>
+        <div class="wrap">
+            <img src="img/brand_story1.jpg" alt="">
+        </div>
+    </section>
+
+    <sectio id="comments">
+        <h2>RECENT COMMENTS</h2>
+        <div class="inner">
+            <article>
+                <li>
+                    <a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, nisi!</a>
+                    <span>2022.06.22</span>
+                </li>
+            </article>
+            <article>
+                <li>
+                    <a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, nisi!</a>
+                    <span>2022.06.22</span>
+                </li>
+            </article>
+            <article>
+                <li>
+                    <a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, nisi!</a>
+                    <span>2022.06.22</span>
+                </li>
+            </article>
+            <article>
+                <li>
+                    <a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, nisi!</a>
+                    <span>2022.06.22</span>
+                </li>
+            </article>
+        </div>
+    </sectio>
+
+
+    <footer id="footer">
+        <div class="inner">
+            <h1>Aesop</h1>
+            <ul>
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Custmer</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+            <address>
+                address : Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, similique. <br/>
+                TEL : +82-2-2100-2114 FAX : +82-2-2100-7999
+            </address>
+            <p>Copyright &copy; 2022 Aesop ALL Right reserved.</p>
+        </div>
+    </footer>
+
+
+    
+    
+</body>
+</html>

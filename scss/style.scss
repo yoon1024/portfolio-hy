@@ -1,0 +1,248 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Frank+Ruhl+Libre:wght@900&family=Karla:wght@200&display=swap');
+
+* {margin: 0px; padding: 0px; box-sizing: border-box;}
+ul,ol,li {list-style: none;}
+a {text-decoration: none;}
+
+
+// header 영역
+#header{
+    // background-color: rgb(209, 208, 201); 
+    position: relative;
+    
+    video{
+        width: 100%; height: 100vh; object-fit: cover; z-index: -1;
+    }
+    
+    .inner{ 
+        a{position: absolute; top: 70px; left: 100px; opacity: 0.8; 
+            // border: 1px solid #000;
+            img{ 
+                width: 150px;
+            }
+        }
+    }
+
+    .menuWeb{//hover 효과 주기
+        #gnb{
+            position: absolute; top: 70px; right: 200px;
+            li{
+                float: left;
+                margin-right: 30px;
+                a{
+                    display: block;
+                    font: 24px/1 'Karla'; color: #fff;
+                }
+
+            }
+        }
+
+        .util{
+            position: absolute; top: 60px; right: 30px;
+            li{float: left; margin: 5px;
+                
+                // border: 1px solid #000;
+                a{
+                    font-size: 30px;
+                    color: #fff;
+                    opacity: 0;
+                    // 배치 어떻게 할지 생각해 보기
+                }
+            }
+        }
+
+    }
+    .copy{ 
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+        text-align: center;
+        color: #fff; opacity: 0.9;
+        h1{
+            // border: 1px solid #000;
+            font: bold 50px/1 'Frank Ruhl Libre';
+        }
+        p{
+            font: 18px/1.4 'Karla';
+        }
+
+    }
+}
+
+#intro{
+    // 구글폰트에서 같은 종류의 폰트인데 굵기만 다른 경우 어떻게 적용하는지 잘 모르겠습니다 ㅜㅜ
+    width: 1400px;
+    // background-color: rgb(209, 208, 201);
+    margin: auto;
+    padding-top: 100px; padding-bottom: 100px;
+    // border: 1px solid #000;
+    overflow: hidden;
+   .inner_1{
+    width: 900px;
+    float: left;
+    h2{
+        margin-left: 150px;
+        font:  40px 'Frank Ruhl Libre'; color: #555;
+    }
+    h3{
+        margin-top: 30px;
+        margin-left: 150px; 
+        width: 400px;
+        font: 18px 'Frank Ruhl Libre'; color: rgb(164, 182, 201);    
+    }
+    .wrap1{
+        // border: 1px solid #000;
+        margin-top: 150px; margin-bottom: 50px;
+        display: flex;
+        justify-content: center; align-items: center;
+        img{ width: 700px;
+        }
+    }
+   }
+
+   .inner_2{
+        float: right;
+        width: 500px;
+        article{
+            display: block;
+            p{
+                font: 15px/1.2 'Frank Ruhl Libre'; color:#999;
+                &:nth-of-type(1){
+                    margin-bottom: 30px; margin-top: 70px;
+                }            
+            }
+        }
+        .wrap2{
+            margin-top: 250px;
+            img{
+                width: 300px; height: 300px; object-fit: cover;
+            }
+        }
+        p{
+            font: 15px/1.2 'Frank Ruhl Libre'; color:#999;
+            &:nth-of-type(1){
+                margin-top: 50px; margin-bottom: 20px;
+            }
+        }
+   }
+}
+
+#product{
+    background-color: rgb(220, 229, 238);
+    padding-top: 30px;
+    >article{
+        text-align: center;
+        p{
+            &:nth-of-type(1){
+                font: 17px/1 'Frank Ruhl Libre'; color:#555;
+            }
+            &:nth-of-type(2){
+                font: 20px/1.2 'Karla';
+            }
+        }
+        h2{
+            font: bold 40px 'Frank Ruhl Libre'; color: #333;
+            margin-bottom: 30px;
+        }
+    }
+    .wrap{//hover
+        display: flex; justify-content: space-evenly;
+        margin-top: 150px;
+        article{
+            width: 300px; height: 350px; text-align: center;
+            img{
+                border-radius: 50%;
+                background-color: rgb(230,230,230);
+                width: 250px; height: 250px; object-fit: contain;
+            }
+            h3{
+                font: 20px 'Frank Ruhl Libre'; color: #333;
+            }
+            p{
+                font: 20px 'Karla'; color: #333;
+            }
+        }
+    }
+}
+
+
+#slide{
+    margin-top: 200px; text-align: center; padding-bottom: 200px;
+    article{
+        p{
+            &:nth-of-type(1){font: 20px/1 'Frank Ruhl Libre'; color: #777;}
+            &:nth-of-type(2){font: 15px/1.2 'Karla'; color: #666; 
+            margin-top: 20px;}
+        }
+        h2{
+            font: 40px 'Frank Ruhl Libre'; color: #333;
+        }
+    }
+    .wrap{
+        margin-top: 80px;
+        img{width: 1000px; height: 500px; object-fit: cover;
+        }
+    }
+}
+
+#comments{ width: 1180px; text-align: center;
+    h2{
+        font: 40px 'Frank Ruhl Libre'; color: #333;
+    }
+    .inner{
+        display: flex; justify-content: center; margin: 100px 0px;      
+        article{
+            width: 380px; height: 500px; border: 1px solid #999;
+            float: left; margin-right: 20px; padding: 170px 50px 0px; text-align: center; position: relative;
+            a{
+                font:20px/1 'Karla'; color: #555;
+            }
+            span{
+                position: absolute;
+                bottom: 0; right: 0;
+                font:20px/1 'Karla'; color: #555;
+            }
+            &:hover{
+                background-color: rgb(164, 182, 201);
+            }
+
+            &:hover a{
+                color: #fff;
+            }
+
+            &:hover span{
+                color: #ddd;
+            }
+
+        }
+    }
+}
+
+
+
+#footer{
+    width: 100%; padding: 100px 0; background: rgb(220, 229, 238);
+    .inner{
+        width: 1180px; margin: 0 auto;
+        &::after{
+            content: ''; display: block; clear: both;
+        }
+        h1{
+            font: bold 24px/1 'arial'; color: #666; float: left;
+        }
+        ul{
+            float: right;
+            li{
+                float: left; margin-left: 20px;
+                a{
+                    font: bold 14px/1 'arial'; color: #666;
+                }
+            }
+        }
+        address{
+            width: 100%; font: 14px/1.3 'arial'; color: #777; margin-bottom: 20px;    margin-top: 20px; float: left;    border-top: 1px solid #888; padding-top: 20px;
+        }
+        p{
+            width: 100%; font: 12px/1 'arial'; color: #777; float: left;
+        }
+    }
+}

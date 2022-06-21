@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Frank+Ruhl+Libre:wght@900&family=Karla:wght@200&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  position: relative;
+}
+#header video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+#header .inner a {
+  position: absolute;
+  top: 70px;
+  left: 100px;
+  opacity: 0.8;
+}
+#header .inner a img {
+  width: 150px;
+}
+#header .menuWeb #gnb {
+  position: absolute;
+  top: 70px;
+  right: 200px;
+}
+#header .menuWeb #gnb li {
+  float: left;
+  margin-right: 30px;
+}
+#header .menuWeb #gnb li a {
+  display: block;
+  font: 24px/1 "Karla";
+  color: #fff;
+}
+#header .menuWeb .util {
+  position: absolute;
+  top: 60px;
+  right: 30px;
+}
+#header .menuWeb .util li {
+  float: left;
+  margin: 5px;
+}
+#header .menuWeb .util li a {
+  font-size: 30px;
+  color: #fff;
+  opacity: 0;
+}
+#header .copy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  opacity: 0.9;
+}
+#header .copy h1 {
+  font: bold 50px/1 "Frank Ruhl Libre";
+}
+#header .copy p {
+  font: 18px/1.4 "Karla";
+}
+
+#intro {
+  width: 1400px;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+#intro .inner_1 {
+  width: 900px;
+  float: left;
+}
+#intro .inner_1 h2 {
+  margin-left: 150px;
+  font: 40px "Frank Ruhl Libre";
+  color: #555;
+}
+#intro .inner_1 h3 {
+  margin-top: 30px;
+  margin-left: 150px;
+  width: 400px;
+  font: 18px "Frank Ruhl Libre";
+  color: rgb(164, 182, 201);
+}
+#intro .inner_1 .wrap1 {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#intro .inner_1 .wrap1 img {
+  width: 700px;
+}
+#intro .inner_2 {
+  float: right;
+  width: 500px;
+}
+#intro .inner_2 article {
+  display: block;
+}
+#intro .inner_2 article p {
+  font: 15px/1.2 "Frank Ruhl Libre";
+  color: #999;
+}
+#intro .inner_2 article p:nth-of-type(1) {
+  margin-bottom: 30px;
+  margin-top: 70px;
+}
+#intro .inner_2 .wrap2 {
+  margin-top: 250px;
+}
+#intro .inner_2 .wrap2 img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+#intro .inner_2 p {
+  font: 15px/1.2 "Frank Ruhl Libre";
+  color: #999;
+}
+#intro .inner_2 p:nth-of-type(1) {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+#product {
+  background-color: rgb(220, 229, 238);
+  padding-top: 30px;
+}
+#product > article {
+  text-align: center;
+}
+#product > article p:nth-of-type(1) {
+  font: 17px/1 "Frank Ruhl Libre";
+  color: #555;
+}
+#product > article p:nth-of-type(2) {
+  font: 20px/1.2 "Karla";
+}
+#product > article h2 {
+  font: bold 40px "Frank Ruhl Libre";
+  color: #333;
+  margin-bottom: 30px;
+}
+#product .wrap {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 150px;
+}
+#product .wrap article {
+  width: 300px;
+  height: 350px;
+  text-align: center;
+}
+#product .wrap article img {
+  border-radius: 50%;
+  background-color: rgb(230, 230, 230);
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+#product .wrap article h3 {
+  font: 20px "Frank Ruhl Libre";
+  color: #333;
+}
+#product .wrap article p {
+  font: 20px "Karla";
+  color: #333;
+}
+
+#slide {
+  margin-top: 200px;
+  text-align: center;
+  padding-bottom: 200px;
+}
+#slide article p:nth-of-type(1) {
+  font: 20px/1 "Frank Ruhl Libre";
+  color: #777;
+}
+#slide article p:nth-of-type(2) {
+  font: 15px/1.2 "Karla";
+  color: #666;
+  margin-top: 20px;
+}
+#slide article h2 {
+  font: 40px "Frank Ruhl Libre";
+  color: #333;
+}
+#slide .wrap {
+  margin-top: 80px;
+}
+#slide .wrap img {
+  width: 1000px;
+  height: 500px;
+  object-fit: cover;
+}
+
+#comments {
+  width: 1180px;
+  text-align: center;
+}
+#comments h2 {
+  font: 40px "Frank Ruhl Libre";
+  color: #333;
+}
+#comments .inner {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px;
+}
+#comments .inner article {
+  width: 380px;
+  height: 500px;
+  border: 1px solid #999;
+  float: left;
+  margin-right: 20px;
+  padding: 170px 50px 0px;
+  text-align: center;
+  position: relative;
+}
+#comments .inner article a {
+  font: 20px/1 "Karla";
+  color: #555;
+}
+#comments .inner article span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font: 20px/1 "Karla";
+  color: #555;
+}
+#comments .inner article:hover {
+  background-color: rgb(164, 182, 201);
+}
+#comments .inner article:hover a {
+  color: #fff;
+}
+#comments .inner article:hover span {
+  color: #ddd;
+}
+
+#footer {
+  width: 100%;
+  padding: 100px 0;
+  background: rgb(220, 229, 238);
+}
+#footer .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+#footer .inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#footer .inner h1 {
+  font: bold 24px/1 "arial";
+  color: #666;
+  float: left;
+}
+#footer .inner ul {
+  float: right;
+}
+#footer .inner ul li {
+  float: left;
+  margin-left: 20px;
+}
+#footer .inner ul li a {
+  font: bold 14px/1 "arial";
+  color: #666;
+}
+#footer .inner address {
+  width: 100%;
+  font: 14px/1.3 "arial";
+  color: #777;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  float: left;
+  border-top: 1px solid #888;
+  padding-top: 20px;
+}
+#footer .inner p {
+  width: 100%;
+  font: 12px/1 "arial";
+  color: #777;
+  float: left;
+}
+
+/*# sourceMappingURL=style.css.map */
